@@ -1,3 +1,9 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This file contains some of the San Jose inclusive housing rules implemented in
+% SWI-Prolog using s(CASP). The easiest way to run it would be to copy it into
+% SWISH.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 :- use_module(library(scasp)).
 :- set_prolog_flag(scasp_unknown, fail).
 :- style_check(-singleton).
