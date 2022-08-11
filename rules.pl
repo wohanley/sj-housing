@@ -9,8 +9,6 @@
 :- style_check(-singleton).
 :- style_check(-discontiguous).
 
-% I don't know how to do the multiplication in the format string here to get a percentage.
-#pred compliance_requires(Rule, RDType, IUType, IULocation, Income, Proportion) :: '@(Rule) requires a @(Proportion) proportion of units to be affordable to @(Income)'.
 #pred rd_type(RD, Type) :: '@(RD) is of type @(Type)'.
 #pred rd_iu_type(RD, IUType) :: '@(RD)\'s inclusionary units are of type @(IUType)'.
 #pred rd_iu_location(RD, IULocation) :: '@(RD)\'s inclusionary units are located at @(IULocation)'.
@@ -19,6 +17,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % For-sale developments
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% I don't know how to do the multiplication in the format string here to get a percentage.
+#pred compliance_requires(Rule, RDType, IUType, IULocation, Income, Proportion) :: '@(Rule) requires a @(Proportion) proportion of units to be affordable to @(Income)'.
 
 % On-site for-sale inclusionary units
 compliance_requires("5.08.400.A.1", for_sale, for_sale, on_site, ami110, 0.15).
